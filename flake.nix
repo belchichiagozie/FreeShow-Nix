@@ -1,5 +1,5 @@
 {
-  description = "FreeShow presentation software for multiple architectures";
+  description = "FreeShow presentation software";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -13,16 +13,16 @@
     {
       packages = forAllSystems (pkgs:
         let
-          version = "1.6.3";
+          version = "1.6.5";
 
           archConfigs = {
             "x86_64-linux" = {
-              url = "https://github.com/ChurchApps/FreeShow/releases/download/v1.6.3/FreeShow-1.6.3-x86_64.AppImage";
-              hash = "sha256-IgfZdiqrDI26As+NvfbApTiCKOFxlw5ZpBE0ec/W45s=";
+              url = "https://github.com/ChurchApps/FreeShow/releases/download/v1.6.5/FreeShow-1.6.5-x86_64.AppImage";
+              hash = "sha256-bMQpiGRtPa2W24ctkuDjL3FOtHHuUz7lBbAYtYwA8Zw=";
             };
             "aarch64-linux" = {
-              url = "https://github.com/ChurchApps/FreeShow/releases/download/v1.6.3/FreeShow-1.6.3-arm64.AppImage";
-              hash = "sha256-QR7UD1cPkex7m+E4sOAhhLubxVf4CbdpO5KY6sF6BGM=";
+              url = "https://github.com/ChurchApps/FreeShow/releases/download/v1.6.5/FreeShow-1.6.5-arm64.AppImage";
+              hash = "sha256-EwQSB4jiQzCiNL/c8f0Ql0sPcxJnx8xnB2Aepu0CRBM=";
             };
           };
 
