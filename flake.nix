@@ -10,11 +10,11 @@
       forAllSystems = f:
         lib.genAttrs supportedSystems (system: f nixpkgs.legacyPackages.${system});
 
-        version = "1.6.5";
+        version = "1.6.6";
 
         sources = {
-          "x86_64-linux"  = { arch = "x86_64"; hash = "sha256-bMQpiGRtPa2W24ctkuDjL3FOtHHuUz7lBbAYtYwA8Zw="; };
-          "aarch64-linux" = { arch = "arm64";  hash = "sha256-EwQSB4jiQzCiNL/c8f0Ql0sPcxJnx8xnB2Aepu0CRBM="; };
+          "x86_64-linux"  = { arch = "x86_64"; hash = "sha256-DrSGS6TvnGPAAw6Du0LJLusaLVQDk5G45tfVb4aIY8g="; };
+          "aarch64-linux" = { arch = "arm64";  hash = "sha256-XAPPf+/o+hKGG5WzU8QejpoWOKUHfyyLIUy2brJBVDA="; };
         };
 
     in
